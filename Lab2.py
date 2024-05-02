@@ -4,11 +4,11 @@ print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
 def display_main_menu():
     print("Enter some numbers separated by commas")
 
-
+#Function was troubleshooted with chatgpt
 def get_user_input():
     print("get_user_input")
     number_list_str = input()
-    number_list = [int(x) for x in number_list_str.split(",")] # from chatgpt here --> need to study
+    number_list = [float(x) for x in number_list_str.split(",")] # from chatgpt here --> need to study
     return number_list
 
 
@@ -34,7 +34,7 @@ def sort_temperature(number_list):
     descending = sorted(number_list, reverse=True)
     return ascending, descending
 
-
+#Function here was made with aid from chatgpt
 def calc_median_temperature(number_list):
     print("calc_median_temperature")
     sorted_list = sorted(number_list)
